@@ -23,7 +23,7 @@ set showmode
 set showcmd
 set hidden
 set wildmenu
-set wildmenu=list:longest
+set wildmode=list:longest
 set visualbell
 set cursorline
 set ttyfast
