@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 call vundle#end()
 filetype plugin indent on
@@ -31,7 +32,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set relativenumber 
-set undofile
+" set undofile
 
 let mapleader = ","
 
@@ -47,10 +48,10 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set colorcolumn=85
+" set wrap
+" set textwidth=79
+" set formatoptions=qrn1
+" set colorcolumn=85
 
 inoremap <up> <nop>
 inoremap <down> <nop>
