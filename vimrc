@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic'
 "Plugin 'OrangeT/vim-csharp'
 Plugin 'file:///home/marcus/tmp/vim-csharp'
 Plugin 'jedverity/feral-vim'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 filetype plugin indent on
