@@ -6,6 +6,12 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-dispatch'
+Plugin 'scrooloose/syntastic'
+"Plugin 'OrangeT/vim-csharp'
+Plugin 'file:///home/marcus/tmp/vim-csharp'
 
 call vundle#end()
 filetype plugin indent on
@@ -33,6 +39,7 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber 
 " set undofile
+syntax on
 
 let mapleader = ","
 
@@ -65,3 +72,14 @@ au FocusLost * :wa
 nmap <c-s> :w<CR>
 vmap <c-s> <Esc><c-s>gv
 imap <c-s> <Esc><c-s> 
+
+let g:LatexBox_show_warnings=0
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
