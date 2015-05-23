@@ -12,6 +12,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'scrooloose/syntastic'
 "Plugin 'OrangeT/vim-csharp'
 Plugin 'file:///home/marcus/tmp/vim-csharp'
+Plugin 'jedverity/feral-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -40,6 +41,8 @@ set laststatus=2
 set relativenumber 
 " set undofile
 syntax on
+set background=dark
+colorscheme feral
 
 let mapleader = ","
 
