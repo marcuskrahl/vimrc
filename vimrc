@@ -2,20 +2,19 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
-Plugin 'gmarik/Vundle.vim'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'scrooloose/syntastic'
-"Plugin 'OrangeT/vim-csharp'
-Plugin 'file:///home/marcus/tmp/vim-csharp'
-Plugin 'jedverity/feral-vim'
-Plugin 'Valloric/YouCompleteMe'
+Plug 'LaTeX-Box-Team/LaTeX-Box'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-dispatch'
+Plug 'scrooloose/syntastic'
+"Plug 'OrangeT/vim-csharp'
+Plug 'file:///home/marcus/tmp/vim-csharp'
+Plug 'jedverity/feral-vim'
+Plug 'Valloric/YouCompleteMe', { 'do': 'python2 install.py' }
 
-call vundle#end()
+call plug#end()
 filetype plugin indent on
 
 set modelines=0

@@ -1,1 +1,5 @@
 bundle/**/*
+plugged/**/*
+.netrwhist
+autoload/**/*
+init.vim
