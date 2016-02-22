@@ -79,9 +79,20 @@ imap <c-s> <Esc><c-s>
 
 let g:LatexBox_show_warnings=0
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+set statusline=
+set statusline+=%<\                          "cut at start
+set statusline+=%2*[%n%H%M%R%W]%*\           "flags
+set statusline+=%-40f\                       "path
+set statusline+=[%{strlen(&ft)?&ft:'none'},  " filetype
+set statusline+=%{strlen(&fenc)?&fenc:&enc}, " encoding
+set statusline+=%{&fileformat}]              " file format
+set statusline+=%#warningmsg#                " switch to warning color
+set statusline+=%{SyntasticStatuslineFlag()} " syntastic errors
+set statusline+=%*                           " back to normal color
+set statusline+=%=                           " right align
+set statusline+=%10((%l,%c)%)\               " line and column
+set statusline+=%P                           " percentage of file
+
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
