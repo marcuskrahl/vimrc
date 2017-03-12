@@ -10,9 +10,16 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-dispatch'
 Plug 'scrooloose/syntastic'
 "Plug 'OrangeT/vim-csharp'
-Plug 'file:///home/marcus/tmp/vim-csharp'
+"Plug 'file:///home/marcus/tmp/vim-csharp'
 Plug 'jedverity/feral-vim'
+Plug 'rust-lang/rust.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': 'python2 install.py' }
+Plug 'editorconfig/editorconfig-vim'
+
+" Typescript dependencies
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 
 call plug#end()
 filetype plugin indent on
@@ -58,6 +65,8 @@ nnoremap <leader><space> :noh<cr>
 nnoremap <tab> %
 vnoremap <tab> %
 
+nnoremap <leader>r :RustRun<cr>
+
 " set wrap
 " set textwidth=79
 " set formatoptions=qrn1
@@ -97,3 +106,5 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+nmap üü <c-]>
